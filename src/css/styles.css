@@ -14,6 +14,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 127px;
+    margin-bottom: 50px;
 }
 
 .gallery-item {
@@ -101,6 +102,15 @@ button:focus {
     background: #a3a744c5;
 }
 
+.add-more{
+    display: none;
+    width: 130px;
+margin: 0 auto;
+
+}
+.is-viseble{
+    display: block;
+}
 .loader {
     margin-top: 15px;
     margin-left: auto;
@@ -158,5 +168,27 @@ button:focus {
 
     100% {
         clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+    }
+}
+.spiner {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: none;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.spiner-isV {
+    display: inline-block;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
