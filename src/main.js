@@ -67,6 +67,7 @@ form.addEventListener('submit', event => {
 });
 addMoreButton.addEventListener('click', event => {
   if (page > totalHits / 15) {
+    addMoreButton.classList.remove('is-viseble');
     return iziToast.error({
       position: 'topRight',
       message: "We're sorry, there are no more posts to load",
